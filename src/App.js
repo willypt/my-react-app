@@ -26,3 +26,33 @@ class App extends Component {
 
 export default App;
 
+// const initialState = {  result: 1,  lastValue: []}
+
+// const reducer = (state = initialState, action) => {
+//   switch (action.type) {    
+//     case 'ADD':      
+//     state = {        
+//       ...state,        
+//       result: state.result + action.payload,      
+//     }      
+//     state.lastValue.push(action.payload)      
+//     break;  
+//   }  
+//   return state;
+// }
+
+// const store = createStore(reducer)
+
+// store.subscribe( () => {  
+//   console.log("State updated! ", store.getState());
+// })
+  
+// store.dispatch({  
+//   type: 'ADD',
+//   payload: 1
+// })
+
+// store.dispatch({  
+//   type: 'ADD',  
+//   payload: 4
+// })
