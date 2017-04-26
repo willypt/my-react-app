@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header'
-import Home from './components/Home'
-import People from './components/People'
+import Header from './containers/Header'
+import Home from './containers/Home'
+import People from './containers/People'
 
 class App extends Component {
   render() {

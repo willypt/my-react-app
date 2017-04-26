@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import {updateBio} from '../actions/personAction'
 
 class Person extends Component {
     // constructor(props) {
@@ -85,10 +86,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         updateBio: (newBio) => {
-            dispatch({  
-                type: 'UPDATE_BIO',
-                payload: newBio
-            })
+            dispatch(updateBio(newBio))
         }
     }
 }
