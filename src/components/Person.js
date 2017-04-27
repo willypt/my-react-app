@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {updateBio} from '../actions/personAction'
 
-class Person extends Component {
+export class Person extends Component {
     // constructor(props) {
     //     super(props)
     //     this.state = {
