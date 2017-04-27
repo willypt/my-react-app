@@ -74,7 +74,7 @@ describe('Connected Person Component', () => {
     bio: TEST_BIO
   }
 
-  it('can renders correctly and emit change when clicked', () => {
+  it('can renders correctly and emit change via dispatch', () => {
     const wrapper = shallow(
       <MockProvider store={store}>
         <ConnectedPerson name={TEST_NAME} age={TEST_AGE} address={TEST_ADDRESS} person={TEST_PERSON} />
