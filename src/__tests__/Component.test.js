@@ -80,7 +80,7 @@ describe('Connected Person Component', () => {
         <ConnectedPerson name={TEST_NAME} age={TEST_AGE} address={TEST_ADDRESS} person={TEST_PERSON} />
       </MockProvider>);
     store.dispatch(updateBio(TEST_CONNECTED_BIO));
-    expect(wrapper.text()).toContain(TEST_CONNECTED_BIO);
-    expect(wrapper.text()).not.toContain(TEST_BIO);
+    expect(wrapper.html()).toContain(TEST_CONNECTED_BIO);
+    expect(wrapper.html()).not.toContain(TEST_BIO);
   });
 });
