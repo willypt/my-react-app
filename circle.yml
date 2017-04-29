@@ -3,7 +3,7 @@ general:
     - "build"
 test:
   override:
-    - npm run test && npm run dist
+    - npm run test && npm run build
   post:
     - mkdir $CIRCLE_ARTIFACTS/result
     - mv build $CIRCLE_ARTIFACTS/result
