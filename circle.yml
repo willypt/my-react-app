@@ -1,3 +1,7 @@
 general:
   artifacts:
     - "build"
+test:
+  post:
+    - mkdir $CIRCLE_ARTIFACTS/result
+    - mv /build $CIRCLE_ARTIFACTS/result
