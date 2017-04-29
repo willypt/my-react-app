@@ -2,6 +2,8 @@ general:
   artifacts:
     - "build"
 test:
+  override:
+    - npm run test && npm run dist
   post:
     - mkdir $CIRCLE_ARTIFACTS/result
-    - mv /build $CIRCLE_ARTIFACTS/result
+    - mv build $CIRCLE_ARTIFACTS/result
